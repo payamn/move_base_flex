@@ -56,7 +56,7 @@ namespace mbf_abstract_nav
 
     // non-dynamically reconfigurable parameters
     private_nh.param("robot_frame", robot_frame_, std::string("base_link"));
-    private_nh.param("map_frame", global_frame_, std::string("map"));
+    private_nh.param("map_frame", global_frame_, std::string("map_server"));
     private_nh.param("mbf_tolerance_check", mbf_tolerance_check_, false);
     private_nh.param("dist_tolerance", dist_tolerance_, 0.1);
     private_nh.param("angle_tolerance", angle_tolerance_, M_PI / 18.0);
